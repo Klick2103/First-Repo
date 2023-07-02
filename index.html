@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Personal Portfolio</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+	<!------Header Section------>
+	<header>
+		<a href="#" class="logo"><span>IT   </span>Auditor<span>..</span></a>
+		<ul class="navlist">
+			<li><a href="#home" class="fade-in" ><span>Home</span><i></i></a></li>
+			<li><a href="#about" class="fade-in" id="aboutmebtn" ><span>About Me</span><i></i></a></li>
+			<li><a href="#services" class="fade-in" id="certifications-button" ><span>Certifications</span><i></i></a></li>
+			<li><a href="#portfolio" class="fade-in"><span>Projects</span><i></i></a></li>
+			<li><a href="#contact" class="fade-in" ><span>Contact</span><i></i></a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<!---------Home Section--------------->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			
+			<h1>Sanket</h1>
+			<h3></h3>
+
+			<script>
+				const text = document.querySelector(".home-text h3");
+			  
+				const textLoad = () => {
+				  text.textContent = "Chartered Accountant.";
+				  setTimeout(() => {
+					text.textContent = "Numismatist.";
+					startAnimation();
+				  }, 6000);
+				  setTimeout(() => {
+					text.textContent = "YouTuber.";
+				  }, 12000);
+				  setTimeout(() => {
+					text.textContent = "Photographer.";
+				  }, 18000);
+				};
+			  
+				const startAnimation = () => {
+				  const homeText = document.querySelector(".home-text");
+				  const pseudoElement = document.createElement("span");
+				  pseudoElement.classList.add("animation-before");
+				  homeText.appendChild(pseudoElement);
+				  setTimeout(() => {
+					homeText.removeChild(pseudoElement);
+				  }, 6000);
+				};
+			  
+				textLoad();
+				setInterval(textLoad, 24000);
+			</script>
+			  
+
+
+			<p>Currently working as Information Technology Auditor  <br> with 9 months+ experience.</p>
+			<div class="button">
+				<a href="#about" class="btn" id="aboutmebtn1">About Me</a>
+			</div>
+		</div>
+	</section>
+
+	<!---------about Section --------------->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/pic.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2 id="form" class="hidden">About <span>Me</span></h2>
+			<script>
+				// Get the button and the About Me section elements
+					const aboutMeButton = document.getElementById('aboutmebtn');
+					const aboutMeSection = document.getElementById('form');
+
+					// Add a click event listener to the button
+					aboutMeButton.addEventListener('click', function() {
+					// Show the About Me section
+					aboutMeSection.style.display = 'block';
+					
+					// Apply the fade-in animation by adding a CSS class
+					aboutMeSection.classList.add('fade-in1');
+					});
+
+			</script>
+			<script>
+				// Get the button and the About Me section elements
+					const aboutMeButton3 = document.getElementById('aboutmebtn1');
+					const aboutMeSection3 = document.getElementById('form');
+
+					// Add a click event listener to the button
+					aboutMeButton3.addEventListener('click', function() {
+					// Show the About Me section
+					aboutMeSection3.style.display = 'block';
+					
+					// Apply the fade-in animation by adding a CSS class
+					aboutMeSection3.classList.add('fade-in1');
+					});
+
+			</script>
+			<h4 id="form1" class="hidden">CA (IT Auditor)</h4>
+			<script>
+				// Get the button and the About Me section elements
+					const aboutMeButton1 = document.getElementById('aboutmebtn');
+					const aboutMeSection1 = document.getElementById('form1');
+
+					// Add a click event listener to the button
+					aboutMeButton1.addEventListener('click', function() {
+					// Show the About Me section
+					aboutMeSection1.style.display = 'block';
+					
+					// Apply the fade-in animation by adding a CSS class
+					aboutMeSection1.classList.add('fade-in2');
+					});
+			</script>
+			<script>
+				// Get the button and the About Me section elements
+					const aboutMeButton4 = document.getElementById('aboutmebtn1');
+					const aboutMeSection4 = document.getElementById('form1');
+
+					// Add a click event listener to the button
+					aboutMeButton4.addEventListener('click', function() {
+					// Show the About Me section
+					aboutMeSection4.style.display = 'block';
+					
+					// Apply the fade-in animation by adding a CSS class
+					aboutMeSection4.classList.add('fade-in2');
+					});
+
+			</script>
+			<p id="form2" class="hidden">Sanket is a Chartered Accountant who qualified in May 2022 & completed his articleship.
+				He has completed Bachelor of Commerce from Mumbai University. He has plans to do CISA in 
+				near future. He has a deep interest in technology & basic knowledge of various languages
+				like Python & VBA.  He has made various Python & VBA bots which have reduced the time by
+				more than 80% if we compare the same process with manual work. Currently, he is working as 
+				a Information System Auditor.
+			</p>
+			<script>
+				// Get the button and the About Me section elements
+					const aboutMeButton2 = document.getElementById('aboutmebtn');
+					const aboutMeSection2 = document.getElementById('form2');
+
+					// Add a click event listener to the button
+					aboutMeButton2.addEventListener('click', function() {
+					// Show the About Me section
+					aboutMeSection2.style.display = 'block';
+					
+					// Apply the fade-in animation by adding a CSS class
+					aboutMeSection2.classList.add('fade-in3');
+					});
+			</script>
+			<script>
+				// Get the button and the About Me section elements
+					const aboutMeButton5 = document.getElementById('aboutmebtn1');
+					const aboutMeSection5 = document.getElementById('form2');
+
+					// Add a click event listener to the button
+					aboutMeButton5.addEventListener('click', function() {
+					// Show the About Me section
+					aboutMeSection5.style.display = 'block';
+					
+					// Apply the fade-in animation by adding a CSS class
+					aboutMeSection5.classList.add('fade-in3');
+					});
+
+			</script>
+		</div>
+	</section>
+
+	<!-----------Services Section-------------->
+	<section class="services" id="services">
+	<div class="main-text">
+		<h2><span>Certi</span>fications</h2>
+	</div>
+	<div class="services-content" >
+		<div class="box" id="box1"  >
+				<div class="microsoft">
+				</div>
+			<h3>Power Platform Fundamentals</h3>
+			<p>Microsoft PL-900 exam tests foundational knowledge on the Power Platform, including Power Apps, Power Automate, Power BI, and Power Virtual Agents for business users and IT professionals.</p>
+			<a href="https://drive.google.com/file/d/1s4Oa_PUVkaak1g5T0PnBhHpEdhDcePL-/view?usp=share_link"  class="btn">Certificate</a>
+
+		</div>
+		
+
+		<div class="box" id="box2">
+			<div class="ISC">
+				<img src="img/ISC.jfif" height="62" width="62" >
+			</div>
+			<h3>Certified in Cybersecurity (CC)</h3>
+			<p>ISC2 Certified in Cybersecurity (CC) is a globally recognized certification validating expertise in cybersecurity practices, risk management, and incident response.</p>
+			<a href="https://drive.google.com/file/d/144C8zvvZaFUXARlwbrumbnjT-cAdsW2t/view" class="btn">Certificate</a>
+		</div>
+
+		<div class="box" id="box3">
+			<div class="ISC">
+				<img src="img/HK.jfif" height="62" width="62" >
+			</div>
+			<h3>IS Auditing, Controls and Assurance</h3>
+			<p>
+				The Coursera course "IS Auditing, Controls and Assurance" by The Hong Kong University of Science and Technology covers auditing information systems and ensuring effective controls for secure business operations.</p>
+			<a href="https://www.coursera.org/account/accomplishments/verify/TQDDC55PQQUF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="btn">Certificate</a>
+		</div>
+	</div>
+	<script>
+	// Wait for the document to be fully loaded
+	document.addEventListener("DOMContentLoaded", function() {
+  // Get the button element
+  	var certificationsButton = document.getElementById("certifications-button");
+  
+  // Add click event listener to the button
+  	certificationsButton.addEventListener("click", function() {
+    // Get the boxes
+    var box1 = document.getElementById("box1");
+    var box2 = document.getElementById("box2");
+    var box3 = document.getElementById("box3");
+    
+    // Apply the fade-in effect to the boxes
+    box1.classList.add("fade-in1");
+    box2.classList.add("fade-in2");
+    box3.classList.add("fade-in3");
+  	});
+	});
+	</script>
+</section>
+
+<!-----------Portfolio Section--------------->
+<section class="portfolio" id="portfolio">
+	<div class="main-text">
+		<h2><span>Pro</span>jects</h2>
+	</div>
+	<div class="portfolio-content">
+		<div class="row">
+			<img src="img/Timesheet.jpg" >
+			<div class="layer">
+				<h5>Timesheet Automation Tool</h5>
+				<p>Check out my latest project which showcase use VBA & Selenium to automate timesheets.</p>
+				<a href="https://youtu.be/x2ZN8oCWkZw"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/Dashboard.jpg" >
+			<div class="layer">
+				<h5>The Ultimate Dashboard</h5>
+				<p>In this project, I used VBA, Power Query & Power Automate to automate dashboard workflow.</p>
+				<a href="https://youtu.be/CXAdP3uHPos"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/GSTV3.jpg" >
+			<div class="layer">
+				<h5>GST Tool Version 3.0</h5>
+				<p>Changelog of GST tool V3.0.</p>
+				<a href="https://youtu.be/FwoxXR-ynKQ"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/GSTV2.jpg" >
+			<div class="layer">
+				<h5>GST Tool Version 2.0</h5>
+				<p>Changelog of GST tool V2.0.</p>
+				<a href="https://youtu.be/7XsDMUu3um8"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/GSTV1.jpg" >
+			<div class="layer">
+				<h5>GST Tool Version 1.0</h5>
+				<p>Used Selenium library of Python which scraps data from GST site and provides the output in excel workbook.</p>
+				<a href="https://youtu.be/fGUBd0qyH70"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/Nothing.jpg" >
+			<div class="layer">
+				<h5>The Case Study Of Nothing !!!</h5>
+				<p>Data was gathered and examined in order to discuss the relationship between the
+					decrease of one plus and the rise of Nothing & demonstrated how Nothing brand
+					adopted the same approach as one plus did in the past.</p>
+				<a href="https://youtu.be/7w8CbuRsOBA"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!------------------Contact section------------>
+<section class="contact" id="contact">
+	<div class="contact-text">
+		
+		<h2>Contact <span>Me!</span></h2>
+		<h4>You can connect with me through my socials.</h4>
+
+		<div class="contact-icons">
+			<a href="https://www.linkedin.com/in/sanketdoijode/"><i class='bx bxl-linkedin'></i></a>
+			<a href="mailto:casanketdoijode@gmail.com"><i class='bx bxl-gmail'></i></a>
+			<a href="https://www.youtube.com/@Klick213"><i class='bx bxl-youtube' ></i></a>
+			<a href="https://www.instagram.com/click_keeda/"><i class='bx bxl-instagram-alt'></i></a>
+		</div>
+
+	</div>
+	<div class="contact-form">
+		<form action="">
+			<input type="name" id="name1"placeholder="Your Name " required>
+			<input type="email" id="email1" placeholder="Your Email " required>
+			<!--<input type="number" placeholder="your Mobile Number" required>-->
+			<textarea name="" id="text1" cols="35" rows="10" placeholder="How Can I Help You " required ></textarea>
+			<input type="submit" value="Send Message" class="submit" id="submit1" required>
+			<script>
+				var nameInput = document.getElementById("name1");
+				var emailInput = document.getElementById("email1");
+				var textInput = document.getElementById("text1");
+				var submitButton = document.getElementById("submit1");
+				var pattern = /[@]/;
+				var pattern1 = /[.]/;
+
+				submitButton.addEventListener("click", function(event) {
+					if (nameInput.value !== "" && emailInput.value !== "" && textInput.value !== "" && pattern.test(emailInput.value) && pattern1.test(emailInput.value)) {
+						nameInput.value = "";
+						emailInput.value = "";
+						textInput.value = "";
+						setTimeout(function() {
+						alert("Successfully submitted!");
+					}, 2500);
+					} else {
+					event.preventDefault(); // Prevent form submission if the fields are empty
+					}
+				});
+			</script>
+		</form>	
+		</div>
+	</div>
+</section>
+
+<!---------End Section---------->
+<section class="end">
+	<div class="last-text">
+		
+	</div>
+	<div class="top">
+		<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+	</div>
+</section>
+
+</body>
+
+</html>
